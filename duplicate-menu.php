@@ -104,11 +104,6 @@ class DuplicateMenu
             $i++;
         }
 
-        foreach( $source_items as $menu_item )
-        {
-
-        }
-
         return $new_id;
     }
 
