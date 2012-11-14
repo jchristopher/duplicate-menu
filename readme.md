@@ -1,4 +1,4 @@
-
+This is a WordPress plugin. [Official download available on WordPress Extend](http://wordpress.org/extend/plugins/duplicate-menu/).
 
 # Duplicate Menu
 
@@ -26,9 +26,13 @@ After activation, navigate to Appearance > Duplicate Menu to create a copy of an
 
 ### Changelog
 
-0.1.1
-: Removed anonymous function call to support PHP <5.3 installs
-: Added link to GitHub, please contribute!
+<dl>
 
-0.1
-: Initial release
+    <dt>0.1.1</dt>
+    <dd>Removed anonymous function call to support PHP <5.3 installs</dd>
+    <dd>Added link to GitHub, please contribute!</dd>
+
+    <dt>0.1</dt>
+    <dd>Initial release</dd>
+
+</dl>
