@@ -3,8 +3,8 @@ Contributors: jchristopher
 Donate link: http://mondaybynoon.com/donate/
 Tags: menu, duplicate, copy, clone
 Requires at least: 3.4.2
-Tested up to: 3.4.2
-Stable tag: 0.1.1
+Tested up to: 3.9.2
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,9 @@ Find out more information in my [explanatory article on Duplicate Menu](http://m
 1. Easily create a carbon copy of an existing Menu
 
 == Changelog ==
+
+= 0.2 =
+* Added `duplicate_menu_item` action, allowing devs to bolt on custom functionality
 
 = 0.1.1 =
 * Removed anonymous function call to support PHP <5.3 installs

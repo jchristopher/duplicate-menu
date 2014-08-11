@@ -28,6 +28,9 @@ After activation, navigate to Appearance > Duplicate Menu to create a copy of an
 
 <dl>
 
+	<dt>0.2</dt>
+	<dd>Added <code>duplicate_menu_item</code> action, allowing devs to bolt on custom functionality</dd>
+
     <dt>0.1.1</dt>
     <dd>Removed anonymous function call to support PHP <5.3 installs</dd>
     <dd>Added link to GitHub, please contribute!</dd>
