@@ -98,7 +98,7 @@ class DuplicateMenu {
         return $new_id;
     }
 
-    static function options_screen() {
+    function options_screen() {
         $nav_menus = wp_get_nav_menus();
     ?>
     <div class="wrap">
