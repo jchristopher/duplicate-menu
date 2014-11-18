@@ -1,4 +1,4 @@
-This is a WordPress plugin. [Official download available on WordPress Extend](http://wordpress.org/extend/plugins/duplicate-menu/).
+This is a WordPress plugin. [Official download available on wordpress.org](http://wordpress.org/extend/plugins/duplicate-menu/).
 
 # Duplicate Menu
 
@@ -15,7 +15,7 @@ Find out more information in my [explanatory article on Duplicate Menu](http://m
 ## Installation
 
 1. Download the plugin and extract the files
-1. Upload `duplicate-posts` to your `~/wp-content/plugins/` directory
+1. Upload `duplicate-menu` to your `~/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 ## Usage
