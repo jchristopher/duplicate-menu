@@ -31,7 +31,7 @@ define( 'DUPLICATE_MENU_DIR',       plugin_dir_path( __FILE__ ) );
 define( 'DUPLICATE_MENU_URL',       plugin_dir_url( __FILE__ ) );
 
 function duplicate_menu_options_page() {
-    add_theme_page( 'Duplicate Menu', 'Duplicate Menu', 'manage_options', 'duplicate-menu', array( 'DuplicateMenu', 'options_screen' ) );
+    add_theme_page( 'Duplicate Menu', 'Duplicate Menu', 'edit_theme_options', 'duplicate-menu', array( 'DuplicateMenu', 'options_screen' ) );
 }
 
 add_action( 'admin_menu', 'duplicate_menu_options_page' );
