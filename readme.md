@@ -26,21 +26,17 @@ After activation, navigate to Appearance > Duplicate Menu to create a copy of an
 
 ### Changelog
 
-<dl>
+#### 0.2.1
+- Added some inline documentation
+- Fixed link in readme
+- Updated screenshot
 
-	<dt>0.2.1</dt>
-	<dd>Added some inline documentation</dd>
-	<dd>Fixed link in readme</dd>
-	<dd>Updated screenshot</dd>
+#### 0.2
+- Added `duplicate_menu_item` action, allowing devs to bolt on custom functionality
 
-	<dt>0.2</dt>
-	<dd>Added <code>duplicate_menu_item</code> action, allowing devs to bolt on custom functionality</dd>
+#### 0.1.1
+- Removed anonymous function call to support PHP <5.3 installs
+- Added link to GitHub, please contribute!
 
-	<dt>0.1.1</dt>
-	<dd>Removed anonymous function call to support PHP &lt;5.3 installs</dd>
-	<dd>Added link to GitHub, please contribute!</dd>
-
-	<dt>0.1</dt>
-	<dd>Initial release</dd>
-
-</dl>
+#### 0.1
+- Initial release
