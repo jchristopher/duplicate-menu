@@ -1,4 +1,4 @@
-This is a WordPress plugin. [Official download available on wordpress.org](http://wordpress.org/extend/plugins/duplicate-menu/).
+This is a WordPress plugin. [Official download available on wordpress.org](https://wordpress.org/plugins/duplicate-menu/).
 
 # Duplicate Menu
 
@@ -10,7 +10,7 @@ Some WordPress installs use very elaborate navigation systems powered by core Me
 
 Duplicate Menu will allow you to create a second (or third, or fourth, etc.) copy of an existing Menu to do with what you will. It generates the clone on a programmatic level and recreates all necessary relationships to ensure the structure is retained as well.
 
-Find out more information in my [explanatory article on Duplicate Menu](http://mondaybynoon.com/20120723/wordpress-plugin-duplicate-menu/)
+Find out more information in my [explanatory article on Duplicate Menu](http://mondaybynoon.com/wordpress-plugin-duplicate-menu/)
 
 ## Installation
 
@@ -22,20 +22,25 @@ Find out more information in my [explanatory article on Duplicate Menu](http://m
 
 After activation, navigate to Appearance > Duplicate Menu to create a copy of an existing Menu
 
-![Easily create a carbon copy of an existing Menu](http://mondaybynoon.com/wp-content/uploads/duplicate-menu-screenshot-1.png)
+![Easily create a carbon copy of an existing Menu](https://mondaybynoon.com/wp-content/uploads/2017/10/screenshot-1.png)
 
 ### Changelog
 
 <dl>
 
+	<dt>0.2.1</dt>
+	<dd>Added some inline documentation</dd>
+	<dd>Fixed link in readme</dd>
+	<dd>Updated screenshot</dd>
+
 	<dt>0.2</dt>
 	<dd>Added <code>duplicate_menu_item</code> action, allowing devs to bolt on custom functionality</dd>
 
-    <dt>0.1.1</dt>
-    <dd>Removed anonymous function call to support PHP <5.3 installs</dd>
-    <dd>Added link to GitHub, please contribute!</dd>
+	<dt>0.1.1</dt>
+	<dd>Removed anonymous function call to support PHP &lt;5.3 installs</dd>
+	<dd>Added link to GitHub, please contribute!</dd>
 
-    <dt>0.1</dt>
-    <dd>Initial release</dd>
+	<dt>0.1</dt>
+	<dd>Initial release</dd>
 
 </dl>

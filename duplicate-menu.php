@@ -5,11 +5,11 @@ Plugin Name: Duplicate Menu
 Plugin URI: https://github.com/jchristopher/duplicate-menu
 Description: Easily duplicate your WordPress Menus
 Author: Jonathan Christopher
-Version: 0.2
+Version: 0.2.1
 Author URI: http://mondaybynoon.com
 */
 
-/*  Copyright 2011-2014 Jonathan Christopher (email : jonathan@mondaybynoon.com)
+/*  Copyright 2011-2017 Jonathan Christopher (email : jonathan@mondaybynoon.com)
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -26,21 +26,24 @@ Author URI: http://mondaybynoon.com
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-define( 'DUPLICATE_MENU_VERSION',   '0.2' );
+define( 'DUPLICATE_MENU_VERSION',   '0.2.1' );
 define( 'DUPLICATE_MENU_DIR',       plugin_dir_path( __FILE__ ) );
 define( 'DUPLICATE_MENU_URL',       plugin_dir_url( __FILE__ ) );
 
 function duplicate_menu_options_page() {
-    add_theme_page( 'Duplicate Menu', 'Duplicate Menu', 'edit_theme_options', 'duplicate-menu', array( 'DuplicateMenu', 'options_screen' ) );
+    add_theme_page( 'Duplicate Menu', 'Duplicate Menu', 'manage_options', 'duplicate-menu', array( 'DuplicateMenu', 'options_screen' ) );
 }
 
 add_action( 'admin_menu', 'duplicate_menu_options_page' );
 
 /**
-* Duplicate Menu
-*/
+ * Duplicate Menu
+ */
 class DuplicateMenu {
 
+    /**
+     * The duplication process
+     */
     function duplicate( $id = null, $name = null ) {
 
         // sanity check
@@ -98,6 +101,9 @@ class DuplicateMenu {
         return $new_id;
     }
 
+    /*
+     * Output the options screen
+     */
     function options_screen() {
         $nav_menus = wp_get_nav_menus();
     ?>
