@@ -27,6 +27,7 @@ After activation, navigate to Appearance > Duplicate Menu to create a copy of an
 ### Changelog
 
 #### 0.2.1
+- Change capability to `edit_theme_options`
 - Added some inline documentation
 - Fixed link in readme
 - Updated screenshot
