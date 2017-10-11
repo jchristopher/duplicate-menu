@@ -31,6 +31,7 @@ Find out more information in my [explanatory article on Duplicate Menu](https://
 == Changelog ==
 
 = 0.2.1 =
+* Change capability to `edit_theme_options`
 * Added some inline documentation
 * Fixed link in readme
 * Updated screenshot
