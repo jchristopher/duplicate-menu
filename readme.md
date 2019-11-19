@@ -26,6 +26,9 @@ After activation, navigate to Appearance > Duplicate Menu to create a copy of an
 
 ### Changelog
 
+#### 0.2.2
+- Fixes Deprecation Warning
+
 #### 0.2.1
 - Change capability to <code>edit_theme_options</code>
 - Added some inline documentation

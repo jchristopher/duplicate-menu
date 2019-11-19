@@ -3,8 +3,8 @@ Contributors: jchristopher
 Donate link: http://mondaybynoon.com/donate/
 Tags: menu, duplicate, copy, clone
 Requires at least: 3.4.2
-Tested up to: 4.8.2
-Stable tag: 0.2.1
+Tested up to: 5.3
+Stable tag: 0.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,9 @@ Find out more information in my [explanatory article on Duplicate Menu](https://
 1. Easily create a carbon copy of an existing Menu
 
 == Changelog ==
+
+= 0.2.2 =
+* Fixes Deprecation Warning
 
 = 0.2.1 =
 * Change capability to `edit_theme_options`
