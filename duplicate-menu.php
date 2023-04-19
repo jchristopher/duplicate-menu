@@ -164,7 +164,7 @@ class DuplicateMenu {
                             </td>
                     </table>
                     <p class="submit">
-                        <input type="submit" name="submit" id="submit" class="button-primary" value="<?php _e( 'Duplicate Menu','duplicate-menu' ) ?>" />
+                        <input type="submit" name="submit" id="submit" class="button-primary" value="<?php _e( 'Duplicate this menu','duplicate-menu' ) ?>" />
                     </p>
                 </form>
             <?php endif; ?>
