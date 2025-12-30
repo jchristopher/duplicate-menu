@@ -4,13 +4,12 @@
 Plugin Name: Duplicate Menu
 Plugin URI: https://github.com/jchristopher/duplicate-menu
 Description: Easily duplicate your WordPress Menus
-Author: Jonathan Christopher
-Text Domain: duplicate-menu
-Version: 0.2.2
+Author: Jon Christopher
+Version: 0.2.3
 Author URI: https://jonchristopher.us/
 */
 
-/*  Copyright 2011-2019 Jonathan Christopher (email : jon@jonchristopher.us)
+/*  Copyright 2011-2025 Jon Christopher (email : jon@jonchristopher.us)
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -27,7 +26,7 @@ Author URI: https://jonchristopher.us/
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-define( 'DUPLICATE_MENU_VERSION',   '0.2.2' );
+define( 'DUPLICATE_MENU_VERSION',   '0.2.3' );
 define( 'DUPLICATE_MENU_DIR',       plugin_dir_path( __FILE__ ) );
 define( 'DUPLICATE_MENU_URL',       plugin_dir_url( __FILE__ ) );
 
