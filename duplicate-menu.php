@@ -112,7 +112,7 @@ class DuplicateMenu {
     /*
      * Output the options screen
      */
-    function options_screen() {
+    static function options_screen() {
         $nav_menus = wp_get_nav_menus();
     ?>
     <div class="wrap">
@@ -145,6 +145,7 @@ class DuplicateMenu {
             <?php else: ?>
                 <form method="post" action="">
                     <?php wp_nonce_field( 'duplicate_menu','duplicate_menu_nonce' ); ?>
+			<?php wp_nonce_field( 'update-nav_menu', 'update-nav-menu-nonce' ); ?>
                     <table class="form-table">
                         <tr valign="top">
                             <th scope="row">
