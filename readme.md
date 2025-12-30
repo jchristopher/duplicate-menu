@@ -26,6 +26,10 @@ After activation, navigate to Appearance > Duplicate Menu to create a copy of an
 
 ### Changelog
 
+#### 0.2.3
+- Tested up to WordPress 6.9
+- Fixes 'link expired' issue. Props [sammosam](https://github.com/jchristopher/duplicate-menu/pull/12)
+
 #### 0.2.2
 - Fixes Deprecation Warning
 

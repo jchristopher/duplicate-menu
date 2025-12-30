@@ -4,12 +4,12 @@
 Plugin Name: Duplicate Menu
 Plugin URI: https://github.com/jchristopher/duplicate-menu
 Description: Easily duplicate your WordPress Menus
-Author: Jonathan Christopher
-Version: 0.2.2
+Author: Jon Christopher
+Version: 0.2.3
 Author URI: https://jonchristopher.us/
 */
 
-/*  Copyright 2011-2019 Jonathan Christopher (email : jon@jonchristopher.us)
+/*  Copyright 2011-2025 Jon Christopher (email : jon@jonchristopher.us)
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -26,7 +26,7 @@ Author URI: https://jonchristopher.us/
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-define( 'DUPLICATE_MENU_VERSION',   '0.2.2' );
+define( 'DUPLICATE_MENU_VERSION',   '0.2.3' );
 define( 'DUPLICATE_MENU_DIR',       plugin_dir_path( __FILE__ ) );
 define( 'DUPLICATE_MENU_URL',       plugin_dir_url( __FILE__ ) );
 
@@ -112,12 +112,12 @@ class DuplicateMenu {
     /*
      * Output the options screen
      */
-    function options_screen() {
+    static function options_screen() {
         $nav_menus = wp_get_nav_menus();
     ?>
     <div class="wrap">
         <div id="icon-options-general" class="icon32"><br /></div>
-            <h2><?php _e( 'Duplicate Menu' ); ?></h2>
+            <h2><?php _e( 'Duplicate Menu','duplicate-menu' ); ?></h2>
 
             <?php if ( ! empty( $_POST ) && wp_verify_nonce( $_POST['duplicate_menu_nonce'], 'duplicate_menu' ) ) : ?>
                 <?php
@@ -131,9 +131,9 @@ class DuplicateMenu {
 
                 <div id="message" class="updated"><p>
                     <?php if ( $new_menu_id ) : ?>
-                        <?php _e( 'Menu Duplicated' ) ?>. <a href="nav-menus.php?action=edit&amp;menu=<?php echo absint( $new_menu_id ); ?>"><?php _e( 'View' ) ?></a>
+                        <?php _e( 'Menu Duplicated','duplicate-menu' ) ?>. <a href="nav-menus.php?action=edit&amp;menu=<?php echo absint( $new_menu_id ); ?>"><?php _e( 'View','duplicate-menu' ) ?></a>
                     <?php else: ?>
-                        <?php _e( 'There was a problem duplicating your menu. No action was taken.' ) ?>.
+                        <?php _e( 'There was a problem duplicating your menu. No action was taken.','duplicate-menu' ) ?>.
                     <?php endif; ?>
                 </p></div>
 
@@ -141,14 +141,15 @@ class DuplicateMenu {
 
 
             <?php if ( empty( $nav_menus ) ) : ?>
-                <p><?php _e( "You haven't created any Menus yet." ); ?></p>
+                <p><?php _e( "You haven't created any Menus yet.",'duplicate-menu' ); ?></p>
             <?php else: ?>
                 <form method="post" action="">
                     <?php wp_nonce_field( 'duplicate_menu','duplicate_menu_nonce' ); ?>
+			<?php wp_nonce_field( 'update-nav_menu', 'update-nav-menu-nonce' ); ?>
                     <table class="form-table">
                         <tr valign="top">
                             <th scope="row">
-                                <label for="source"><?php _e( 'Duplicate this menu' ); ?>:</label>
+                                <label for="source"><?php _e( 'Duplicate this menu','duplicate-menu' ); ?>:</label>
                             </th>
                             <td>
                                 <select name="source">
@@ -158,12 +159,12 @@ class DuplicateMenu {
                                         </option>
                                     <?php endforeach; ?>
                                 </select>
-                                <span style="display:inline-block; padding:0 10px;"><?php _e( 'and call it' ); ?></span>
+                                <span style="display:inline-block; padding:0 10px;"><?php _e( 'and call it','duplicate-menu' ); ?></span>
                                 <input name="new_menu_name" type="text" id="new_menu_name" value="" class="regular-text" />
                             </td>
                     </table>
                     <p class="submit">
-                        <input type="submit" name="submit" id="submit" class="button-primary" value="Duplicate Menu" />
+                        <input type="submit" name="submit" id="submit" class="button-primary" value="<?php _e( 'Duplicate this menu','duplicate-menu' ) ?>" />
                     </p>
                 </form>
             <?php endif; ?>
